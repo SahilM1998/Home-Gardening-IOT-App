@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Turn ON / OFF"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewTurnOn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:text="On!" />
+
+    <Button
+        android:id="@+id/btnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewTurnOff"
+        android:layout_alignStart="@+id/btnOn"
+        android:text="Off!" />
+
+    <TextView
+        android:id="@+id/textViewTurnOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewStatus"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="82dp"
+        android:text="To Turn On Press the ON button"
+        android:textColor="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/textViewTurnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textViewTurnOn"
+        android:layout_marginTop="144dp"
+        android:text="To Turn Off Press the OFF button"
+        android:textColor="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="204dp"
+        android:text="Status"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewstatuss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewTurnOn"
+        android:layout_centerVertical="true"
+        android:text="To check Status Press the button"
+        android:textColor="@color/colorAccent"
+        />
+
+    <Button
+        android:id="@+id/btnStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewstatuss"
+        android:layout_alignStart="@+id/btnOn"
+        android:text="Status!" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="183dp"
+        android:text="Timer"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textViewTurnOn"
+        android:layout_marginBottom="138dp"
+        android:text="To Set Timer Press the button"
+        android:textColor="@color/colorAccent"
+        />
+
+    <Button
+        android:id="@+id/btnSetTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnOn"
+        android:layout_marginBottom="120dp"
+        android:text="Set Timer" />
+
+</RelativeLayout>
